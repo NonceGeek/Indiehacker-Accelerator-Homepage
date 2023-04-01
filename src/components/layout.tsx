@@ -4,7 +4,7 @@ export default function Layout({ children }: any) {
   return (
     <>
       <Navbar />
-      <div>{children}</div>
+      <div className="w-[928px] mx-auto pt-14">{children}</div>
     </>
   );
 }
