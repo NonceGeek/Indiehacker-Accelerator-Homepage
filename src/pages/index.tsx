@@ -1,9 +1,18 @@
 import Layout from "@/components/layout";
+import Image from "next/image";
+
+import Banner from '../../public/images/index-banner.png';
 
 export default function index() {
   return (
     <Layout>
-      <div className="font-ps2p text-2xl font-bold text-red-500">index</div>
+      <div className="banner w-full">
+        <Image
+          className="object-cover"
+          src={Banner}
+          alt="Banner"
+        />
+      </div>
     </Layout>
   );
 }
