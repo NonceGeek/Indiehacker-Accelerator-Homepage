@@ -2,6 +2,8 @@ import React from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 
+import Logo from '../../public/images/logo.png';
+
 const links = [
   {
     text: 'HACKER HOUSE',
@@ -26,9 +28,8 @@ export default function Navbar() {
     <div className="navbar border-b border-black px-14 py-5 flex justify-between">
       <Link href="/">
         <Image
-          src="/images/logo.png"
-          width={120}
-          height={38}
+          className='w-[120px]'
+          src={Logo}
           alt="Logo"
         />
       </Link>

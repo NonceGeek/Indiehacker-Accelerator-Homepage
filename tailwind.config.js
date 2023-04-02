@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         ps2p: ['var(--font-ps2p)'],
+        alef: ['var(--font-alef)'],
       },
     },
   },
