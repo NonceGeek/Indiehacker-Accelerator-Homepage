@@ -28,12 +28,13 @@ export default function Entry({
     'right w-[536px] h-full flex flex-col justify-between',
     `${reverse ? 'items-end' : 'items-start'}`,
   )
+  const marginClass = reverse ? 'mr-8' : 'ml-8'
   const shadowStyle = reverse ? {
     boxShadow: '-12px 12px 0px #F17496',
   } : {
     boxShadow: '12px 12px 0px #F17496',
   }
-  const marginClass = reverse ? 'mr-8' : 'ml-8'
+  const justifyClass = reverse ? 'justify-end' : 'justify-start'
 
   return (
     <div className={rootClass}>
@@ -68,7 +69,7 @@ export default function Entry({
           size={'md'}
           addonClass={marginClass}
         />
-        <div className="slogon w-full h-[120px] border-2 border-black p-8 bg-[#F4C3A3] text-[20px]">
+        <div className={`${justifyClass} flex slogon w-full h-[120px] border-2 border-black p-8 bg-[#F4C3A3] text-[20px]`}>
           <span className="font-alef">{slogon}</span>
         </div>
         <div
