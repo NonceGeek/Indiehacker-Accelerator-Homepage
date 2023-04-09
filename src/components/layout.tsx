@@ -15,6 +15,7 @@ export default function Layout({ children }: any) {
           alt="logo"
         />
       </div>
+      <div className='w-full pb-4 flex justify-center items-center'>Copyright © {new Date().getFullYear()} NonceGeek</div>
     </>
   );
 }
