@@ -57,7 +57,8 @@ export default function index() {
       <div className="banner w-full">
         <Image className="object-cover" src={Banner} alt="Banner" />
       </div>
-      <ShadowText text={'MOVE MICRO ACCELERATOR FULFIL EVERY AMBITION'} size={'lg'} addonClass={'mt-5'} />
+      <ShadowText text={'MOVE MICRO ACCELERATOR'} size={'lg'} addonClass={'mt-5'} />
+      <div className='mt-4 px-2 text-center font-alef text-3xl'>Grow together with the high-quality and long-term projects in the Move ecosystem, and jointly create a Move-based Web3 future.</div>
       <div className="entries pt-[88px] pb-16 flex flex-col gap-y-[104px]">
         {entries.map((entry, i) => (
           <Entry
@@ -72,7 +73,7 @@ export default function index() {
       </div>
       <div className="partners mt-[112px] flex flex-col items-center">
         <ShadowText text={'PARTNERS'} size={'md'} />
-        <div className="mt-10 w-full grid grid-cols-5 gap-y-6">
+        {/* <div className="mt-10 w-full grid grid-cols-5 gap-y-6">
           {Array(10)
             .fill(1)
             .map((_, i) => (
@@ -82,7 +83,8 @@ export default function index() {
                 </div>
               </div>
             ))}
-        </div>
+        </div> */}
+        <div className='mt-10 w-full text-center'>Welcome!</div>
       </div>
     </Layout>
   );
