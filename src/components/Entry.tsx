@@ -26,14 +26,21 @@ export default function Entry({
     `${reverse ? 'items-end' : 'items-start'}`
   );
   const marginClass = reverse ? 'mr-8' : 'ml-8';
+  const btnClass = link.url === '/' ? '' : 'cursor-pointer';
   const shadowStyle = reverse
     ? {
-        boxShadow: '-12px 12px 0px #F17496',
-      }
+      boxShadow: '-12px 12px 0px #F17496',
+    }
     : {
-        boxShadow: '12px 12px 0px #F17496',
-      };
+      boxShadow: '12px 12px 0px #F17496',
+    };
   const justifyClass = reverse ? 'justify-end' : 'justify-start';
+
+  const navTo = (url: String) => () => {
+    if (url !== '/') {
+      location.href = url as string;
+    }
+  }
 
   return (
     <div className={rootClass}>
@@ -58,11 +65,12 @@ export default function Entry({
       <div className={rightClass}>
         <ShadowText text={title} size={'md'} addonClass={marginClass} />
         <div
-          className={`${justifyClass} items-center flex slogon w-full h-[120px] border-2 border-black p-8 bg-[#F4C3A3] text-[20px] font-ale`}>
+          className={`${justifyClass} items-center flex slogon w-full min-h-[120px] border-2 border-black px-8 py-4 bg-[#F4C3A3] text-[20px] font-ale`}>
           {slogon}
         </div>
         <div
-          className={`${marginClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
+          onClick={navTo(link.url)}
+          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
           style={shadowStyle}>
           {link.text}
         </div>

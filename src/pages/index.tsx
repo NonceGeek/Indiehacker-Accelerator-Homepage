@@ -18,7 +18,7 @@ export default function index() {
         'Jointly organized by AntalphaLab & NonceGeekDAO, based in Dali@China, offline, three-week co-living and co-buidling for Hackers.',
       link: {
         text: 'see the history',
-        url: '/',
+        url: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
       },
       img: Entry1,
     },
@@ -37,7 +37,7 @@ export default function index() {
       slogon: 'An online learning community focus on Move, which is 200+ studiers!',
       link: {
         text: 'Learn more',
-        url: '/',
+        url: 'https://noncegeek.notion.site/9f93f931c5174da8b9cb5a635cd1657a?v=3a6ce3c5b855463983edfa4f0a679ac6',
       },
       img: Entry3,
     },
