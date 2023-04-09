@@ -3,7 +3,6 @@ import Image from 'next/image';
 import ShadowText from '@/components/ShadowText';
 import Entry from '@/components/Entry';
 
-import Logo from '../../public/images/logo.png';
 import Banner from '../../public/images/index-banner.png';
 import Entry1 from '../../public/images/entry-1.png';
 import Entry2 from '../../public/images/entry-2.png';
@@ -17,7 +16,7 @@ export default function index() {
       slogon:
         'Jointly organized by AntalphaLab & NonceGeekDAO, based in Dali@China, offline, three-week co-living and co-buidling for Hackers.',
       link: {
-        text: 'see the history',
+        text: 'See the history',
         url: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
       },
       img: Entry1,
