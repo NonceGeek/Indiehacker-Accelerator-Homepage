@@ -4,10 +4,10 @@ import ShadowText from '@/components/ShadowText';
 import Entry from '@/components/Entry';
 
 import Banner from '../../public/images/index-banner.png';
-import Entry1 from '../../public/images/entry-1.png';
-import Entry2 from '../../public/images/entry-2.png';
-import Entry3 from '../../public/images/entry-3.png';
-import Entry4 from '../../public/images/entry-4.png';
+import Entry1 from '../../public/images/entry-1.jpg';
+import Entry2 from '../../public/images/entry-2.jpg';
+import Entry3 from '../../public/images/entry-3.jpg';
+import Entry4 from '../../public/images/entry-4.jpg';
 
 export default function index() {
   const entries = [
