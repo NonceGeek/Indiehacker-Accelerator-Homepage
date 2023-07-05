@@ -2,6 +2,7 @@ import Layout from '@/components/layout';
 import Image from 'next/image';
 import ShadowText from '@/components/ShadowText';
 import Entry from '@/components/Entry';
+import EntrySpec from '@/components/EntrySpec';
 
 import Banner from '../../public/images/index-banner.png';
 import Entry1 from '../../public/images/entry-1.jpg';
@@ -10,17 +11,21 @@ import Entry3 from '../../public/images/entry-3.jpg';
 import Entry4 from '../../public/images/entry-4.jpg';
 
 export default function index() {
-  const entries = [
-    {
-      title: 'HACKER HOUSE',
-      slogon:
-        'Jointly organized by AntalphaLab & NonceGeekDAO, based in Dali@China, offline, three-week co-living and co-buidling for Hackers.',
-      link: {
-        text: 'See the history',
-        url: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
-      },
-      img: Entry1,
+  const entry_hacker_house = [{
+    title: 'HACKER HOUSE',
+    slogon:
+      'Jointly organized by AntalphaLab & NonceGeekDAO, based in Dali@China, offline, three-week co-living and co-buidling for Hackers.',
+    link: {
+      text: 'See the history',
+      url: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
     },
+    link_new: {
+      text: 'Apply for the new',
+      url: 'https://mp.weixin.qq.com/s/OeSwjDHjeaHhM-MWD-VQWw',
+    },
+    img: Entry1,
+  },]
+  const entries = [
     {
       title: 'ACCELERATOR',
       slogon:
@@ -41,11 +46,11 @@ export default function index() {
       img: Entry3,
     },
     {
-      title: 'Chat-Programming',
-      slogon: 'Learn everything about programming by AI.',
+      title: 'AI-based Scaffold Move',
+      slogon: 'the smart contract and dApp programming copilot built on OpenAI and the AI database Embedbase.',
       link: {
-        text: 'TODO',
-        url: '/',
+        text: 'Try the Demo',
+        url: 'https://scaffold.movedid.build',
       },
       img: Entry4,
     },
@@ -59,6 +64,17 @@ export default function index() {
       <ShadowText text={'MOVE MICRO ACCELERATOR'} size={'lg'} addonClass={'mt-5'} />
       <div className='mt-4 px-2 text-center font-alef text-3xl'>Grow together with the high-quality and long-term projects in the Move ecosystem, and jointly create a Move-based Web3 future.</div>
       <div className="entries pt-[88px] pb-16 flex flex-col gap-y-[104px]">
+      {entry_hacker_house.map((entry, i) => (
+          <EntrySpec
+            key={i}
+            title={entry.title}
+            slogon={entry.slogon}
+            link={entry.link}
+            link_new={entry.link_new}
+            img={entry.img}
+            reverse={i % 2 === 1}
+          />
+        ))}
         {entries.map((entry, i) => (
           <Entry
             key={i}

@@ -7,7 +7,7 @@ import Logo from '../../public/images/logo.png';
 const links = [
   {
     text: 'HACKER HOUSE',
-    link: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
+    link: 'https://mp.weixin.qq.com/s/OeSwjDHjeaHhM-MWD-VQWw',
   },
   {
     text: 'ACCELERATOR',
@@ -18,8 +18,8 @@ const links = [
     link: 'https://noncegeek.notion.site/9f93f931c5174da8b9cb5a635cd1657a?v=3a6ce3c5b855463983edfa4f0a679ac6',
   },
   {
-    text: 'Chat-Programming',
-    link: '/',
+    text: 'AI-based Scaffold Move',
+    link: 'https://scaffold.movedid.build',
   },
   {
     text: 'PARTNERS',

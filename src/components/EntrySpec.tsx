@@ -4,16 +4,21 @@ import ShadowText from './ShadowText';
 
 import Close from '../../public/images/close.png';
 
-export default function Entry({
+export default function EntrySpec({
   title,
   slogon,
   link,
+  link_new,
   img,
   reverse,
 }: {
   title: String;
   slogon: String;
   link: {
+    text: String;
+    url: String;
+  };
+  link_new: {
     text: String;
     url: String;
   };
@@ -73,6 +78,12 @@ export default function Entry({
           className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
           style={shadowStyle}>
           {link.text}
+        </div>
+        <div
+          onClick={navTo(link_new.url)}
+          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
+          style={shadowStyle}>
+          {link_new.text}
         </div>
         
       </div>
