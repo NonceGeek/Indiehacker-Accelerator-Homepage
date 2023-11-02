@@ -12,48 +12,58 @@ import Entry4 from '../../public/images/entry-4.jpg';
 
 export default function index() {
   const entry_hacker_house = [{
-    title: 'HACKER HOUSE',
-    slogon:
-      'Jointly organized by AntalphaLab & NonceGeekDAO, based in Dali@China, offline, three-week co-living and co-buidling for Hackers.',
+    title: 'INDIE HACKER HOUSE',
+    slogan:
+      'based in Dali, offline, buidl amaZing tHingS together.',
     link: {
       text: 'See the history',
       url: 'https://mp.weixin.qq.com/s/zYNAnOcF9q5NOnT7XHxXsQ',
     },
     link_new: {
-      text: 'Apply for the new',
+      text: 'Apply for the newest',
       url: 'https://mp.weixin.qq.com/s/OeSwjDHjeaHhM-MWD-VQWw',
     },
     img: Entry1,
   },]
   const entries = [
+      {
+      title: 'HACKER HOUSE',
+      slogan:
+        'based in Dali, offline, buidl amaZing tHingS together.',
+      link: {
+        text: 'Apply to the newest',
+        url: 'https://mp.weixin.qq.com/s/yntbGTpjwSBPB7H4dY4y3Q',
+      },
+      img: Entry1,
+    },
     {
       title: 'ACCELERATOR',
-      slogon:
-        'Through the offline Accelerator, fully immersively upgraded to solve the core stuck points for the coolest move projects.',
+      slogan:
+        'Through the Accelerator, let projects from Aha to Wow.',
       link: {
-        text: 'Apply to join',
+        text: 'Apply to(TODO)',
         url: '/',
       },
       img: Entry2,
     },
-    {
-      title: 'CO-LEARNING CAMP',
-      slogon: 'An online learning community focus on Move, which is 200+ studiers!',
-      link: {
-        text: 'Learn more',
-        url: 'https://noncegeek.notion.site/9f93f931c5174da8b9cb5a635cd1657a?v=3a6ce3c5b855463983edfa4f0a679ac6',
-      },
-      img: Entry3,
-    },
-    {
-      title: 'AI-based Scaffold Move',
-      slogon: 'the smart contract and dApp programming copilot built on OpenAI and the AI database Embedbase.',
-      link: {
-        text: 'Try the Demo',
-        url: 'https://scaffold.movedid.build',
-      },
-      img: Entry4,
-    },
+    // {
+    //   title: 'CO-LEARNING CAMP',
+    //   slogan: 'An online learning community focus on Move, which is 200+ studiers!',
+    //   link: {
+    //     text: 'Learn more',
+    //     url: 'https://noncegeek.notion.site/9f93f931c5174da8b9cb5a635cd1657a?v=3a6ce3c5b855463983edfa4f0a679ac6',
+    //   },
+    //   img: Entry3,
+    // },
+    // {
+    //   title: 'AI-based Scaffold Move',
+    //   slogan: 'the smart contract and dApp programming copilot built on OpenAI and the AI database Embedbase.',
+    //   link: {
+    //     text: 'Try the Demo',
+    //     url: 'https://scaffold.movedid.build',
+    //   },
+    //   img: Entry4,
+    // },
   ];
 
   return (
@@ -61,25 +71,25 @@ export default function index() {
       <div className="banner w-full">
         <Image className="object-cover" src={Banner} alt="Banner" />
       </div>
-      <ShadowText text={'MOVE MICRO ACCELERATOR'} size={'lg'} addonClass={'mt-5'} />
-      <div className='mt-4 px-2 text-center font-alef text-3xl'>Grow together with the high-quality and long-term projects in the Move ecosystem, and jointly create a Move-based Web3 future.</div>
+      <ShadowText text={'INDIE HACKER ACCELERATOR'} size={'lg'} addonClass={'mt-5'} />
+      <div className='mt-4 px-2 text-center font-alef text-3xl'>Let Indie Hackers Gain Life Growth.</div>
       <div className="entries pt-[88px] pb-16 flex flex-col gap-y-[104px]">
-      {entry_hacker_house.map((entry, i) => (
+      {/* {entry_hacker_house.map((entry, i) => (
           <EntrySpec
             key={i}
             title={entry.title}
-            slogon={entry.slogon}
+            slogan={entry.slogan}
             link={entry.link}
-            link_new={entry.link_new}
+            // link_new={entry.link_new}
             img={entry.img}
             reverse={i % 2 === 1}
           />
-        ))}
+        ))} */}
         {entries.map((entry, i) => (
           <Entry
             key={i}
             title={entry.title}
-            slogon={entry.slogon}
+            slogan={entry.slogan}
             link={entry.link}
             img={entry.img}
             reverse={i % 2 === 1}

@@ -6,14 +6,14 @@ import Close from '../../public/images/close.png';
 
 export default function EntrySpec({
   title,
-  slogon,
+  slogan,
   link,
   link_new,
   img,
   reverse,
 }: {
   title: String;
-  slogon: String;
+  slogan: String;
   link: {
     text: String;
     url: String;
@@ -70,18 +70,18 @@ export default function EntrySpec({
       <div className={rightClass}>
         <ShadowText text={title} size={'md'} addonClass={marginClass} />
         <div
-          className={`${justifyClass} items-center flex slogon w-full min-h-[120px] border-2 border-black px-8 py-4 bg-[#F4C3A3] text-[20px] font-ale`}>
-          {slogon}
+          className={`${justifyClass} items-center flex slogan w-full min-h-[120px] border-2 border-black px-8 py-4 bg-[#F4C3A3] text-[20px] font-ale`}>
+          {slogan}
         </div>
         <div
           onClick={navTo(link.url)}
-          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
+          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[16px] text-white`}
           style={shadowStyle}>
           {link.text}
         </div>
         <div
           onClick={navTo(link_new.url)}
-          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[32px] text-white`}
+          className={`${marginClass} ${btnClass} link w-[280px] h-16 border-2 border-black bg-[#B58DF8] flex justify-center items-center font-alef text-[16px] text-white`}
           style={shadowStyle}>
           {link_new.text}
         </div>
